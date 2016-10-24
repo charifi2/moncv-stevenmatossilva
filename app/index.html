@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>CV Steven Matos Silva</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+		<link rel = "stylesheet" href = "styles\style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Steven Matos Silva</a>
+		</div>
+		<div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="#section1">Présentation</a></li>
+					<li><a href="#section2">Skills</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div id="section1" class="container-fluid">
+	  <h1>Présentation</h1>
+	  <p>Age: 23 ans (4 octobre 1993)</p>
+	  <p>Nationalité: Suisse et Portugais</p>
+	  <p><a href="mailto:stevenmatossilva93@gmail.com" id="mail">stevenmatossilva93@gmail.com</a></p>
+	  <h1>Formation</h1>
+	  <p>2010-2013: CFC d'informaticien généraliste + maturité professionnelle technique délivré par le CPLN à Neuchâtel</p>
+	</div>
+	<div id="section2" class="container-fluid">
+	  <h2>Informatique</h2>
+	  <br/>
+	  <p>Programmation (C, C#, C++, XNA, Java)</p>
+	  <div class="progress">
+		<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemax="100" style="width:70%"></div>
+	  </div>
+	  <p>Développement WEB (HTML, CSS, PHP)</p>
+	  <div class="progress">
+		<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemax="100" style="width:40%"></div>
+	  </div>
+	  <p>Harware PC</p>
+	  <div class="progress">
+		<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemax="100" style="width:85%"></div>
+	  </div>
+	  <h2>Langue</h2>
+	  <p>Français / Portugais</p>
+	  <div class="progress">
+		<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemax="100" style="width:100%"></div>
+	  </div>
+	  <p>Anglais</p>
+	  <div class="progress">
+		<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemax="100" style="width:50%"></div>
+	  </div>
+	</div>	
+	<script>
+		$(document).ready(function(){
+		  // Add scrollspy to <body>
+		  $('body').scrollspy({target: ".navbar", offset: 50});
+
+		  // Add smooth scrolling on all links inside the navbar
+		  $("#myNavbar a").on('click', function(event) {
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+			  // Prevent default anchor click behavior
+			  event.preventDefault();
+
+			  // Store hash
+			  var hash = this.hash;
+
+			  // Using jQuery's animate() method to add smooth page scroll
+			  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 800, function(){
+		   
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+			  });
+			}  // End if
+		  });
+		});
+	</script>
+	</body>
+</html>

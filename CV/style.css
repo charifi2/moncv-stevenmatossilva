@@ -1,0 +1,48 @@
+.page{
+	width : 780px;
+	margin : auto;
+	font-size : 15px;
+	font-family : Arial;
+}
+
+.info{
+	height : 200px;
+}
+
+.infoGauche{
+	float : left;
+}
+
+.infoDroite{
+	float : right;
+}
+
+.section{
+	text-align : justify;
+	margin-bottom : 70px;
+}
+
+.secGauche{
+	float: left;
+	font-weight: bold;
+}
+
+.secDroite{
+	margin-left : 150px;
+	margin-top: 39px;
+}
+
+h2{
+	font-size : 28px;
+	color: #1E90FF;
+	text-transform: initial;
+	border-bottom : 2px solid #1E90FF;
+}
+
+#formGauche p{
+	margin-bottom: 37px;
+}
+
+#expGauche p{
+	margin-top: 99px;
+}
